@@ -1,0 +1,27 @@
+1) The collection of data can be improved. For NaN values, which signify unavailability of data, we can drop the data points if they are few or replace them with the average of the rest. Large spread values can be instantaneous events that result in a large spread for an instant or inconsistent collection of data. In this case, I chose to drop these values as they constituted less than 0.5 per cent of the data. Also, these outliers are desirable if they can be explained like market caps of large companies, but a vast spread is certainly not expected behaviour.
+
+2) Volatility and liquidity should broadly impact spread as the trade frequency should affect spread, which signifies transactional costs. Similarly, volatility represents the frequency of price change, which affects the risk and confidence level of undertaken trades and should affect the transactional costs or the spread. This played out nicely in my model because I could use this knowledge by using various functions of these two features to fit my model and evaluate the efficacy using scatter plots and R squared score.
+
+3) My model is balanced because I refrained from putting in a lot of complex functions in the model. I added complexity only where I could explain it by logic AND the scatter plots. Also, my R squared value of 0.65 signifies that the model is good but not overfit.
+At the same time, the R squared value for training and testing data do not considerably differ, suggesting regular fitting.
+
+4) I used a Linear Regression model.
+Features: 
+spx_beta
+volatility
+reciprocal of outstanding shares (price/market_cap)
+reciprocal* of volume (1/(1+volume)**0.2)
+reciprocal* of liquidity (1/(1+liquidity)**0.3)
+reciprocal* of price (1/(1+price)**0.4)
+an exponential func of spx_beta ((log(100-spxbeta))**0.4)
+avg_market_size
+(reciprocal* => reciprocal of some power of _)
+
+Type: Linear Regression Model
+
+Weights: I used the cube root of liquidity to weigh my data points. This ensures that most traded stocks are focused on getting the correct spreads, and the power of 0.3 ensures that these don't heavily dominate the loss function.
+
+5) Yes, I checked whether the predictions were optimistic and not very large, which is unexpected for a spread. 
+
+6) Training different models for different company stocks makes more sense because the features interact differently with other companies, and coming up with a generic model that is accurate at the same time is a complex undertaking. Different models tailored to companies can capture the nuances of these companies' interactions with the set of features and come up with better, more accurate results. 
+
