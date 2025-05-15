@@ -4,3 +4,4 @@ The modelling folder contains a project implementing a simple linear regression 
 The forecasting using NNs file is a jupyter notebook with code that uses deep learning for WTI crude oil price prediction.
 The randomwalk.py file is a simple monte carlo simulated random walks implementation.
 The fbprophet file contains a simple multiseries forecasting example using fbprophet for different weather stations in China.
+The audio classification folder uses pretrained model along with self- implemented clustering algorithms to classify audio files.
