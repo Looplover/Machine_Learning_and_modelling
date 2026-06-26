@@ -1,7 +1,5 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:7F77DD,100:1D9E75&height=200&section=header&text=Mathematical%20Models%20%26%20ML&fontSize=48&fontColor=ffffff&fontAlignY=38&desc=Explorations%20in%20Time%20Series%2C%20Deep%20Learning%2C%20and%20Quantitative%20Finance&descAlignY=58&descSize=18&descColor=9F9F9F" alt="header" />
-
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&pause=1000&color=7F77DD&center=true&vCenter=true&width=700&lines=Deep+Learning+for+Time+Series+Forecasting;Quantitative+Market+Signals+%26+Statistics;AWS+SageMaker+%7C+Prophet+%7C+Attention+LSTMs)](https://git.io/typing-svg)
 
 </div>
